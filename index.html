@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loro Portfolio</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="Myportfolio.css" />
+</head>
+<body>
+
+  <!-- ✅ Sticky Navbar with Hamburger Menu -->
+  <nav class="navbar">
+    <div class="menu-toggle" id="menu-toggle">
+      <i class='bx bx-menu'></i>
+    </div>
+    <a href="#" class="logo">
+      <img src="MyPics/Logo2-removebg-preview.png" width="80px" height="80px" alt="Logo">
+    </a>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#services">Service</a></li>
+    </ul>
+  </nav>
+
+  <!-- ✅ Home Section -->
+  <section class="home" id="home">
+    <div class="home-info">
+      <h1>Francis Loro</h1>
+      <h2>I'm a <span><span>Frontend Developer</span></span></h2>
+      <p>"Innovating through code, crafting solutions that empower and inspire.<br>Building seamless experiences with technology that drives change."</p>
+      <div class="btn-sci">
+        <a href="#contact" class="btn">HIRE ME</a>
+        <div class="sci">
+          <a href="https://github.com/FRANCISLORO" target="_blank"><i class='bx bxl-github'></i></a>
+          <a href="https://twitter.com/in/@Loro7Loro" target="_blank"><i class='bx bxl-twitter'></i></a>
+          <a href="https://www.tiktok.com/@lorisco10" target="_blank"><i class='bx bxl-tiktok'></i></a>
+          <a href="https://youtube.com/@FRANCISLORO" target="_blank"><i class='bx bxl-youtube'></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="home-img">
+      <div class="img-box">
+        <div class="img-item">
+          <img src="MyPics/Loris3.jpg" alt="Francis Loro">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ About Section -->
+  <section class="about" id="about">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          "I am a passionate Frontend developer<br>
+          who creates efficient, user-friendly web applications.<br>
+          I have experience working with modern tools like HTML, CSS, JavaScript, and SQL.<br>
+          I enjoy turning complex problems into simple, beautiful, and intuitive designs."
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="MyPics/ABOUTMEPIC.JPG" alt="Francis Loro">
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Projects Section -->
+  <section class="project" id="projects">
+    <h2>My Projects</h2>
+    <div class="project-container">
+      <div class="project-wrapper">
+        <div class="project-box">
+          <img src="MyPics/Lost pic.webp" alt="lost n found" class="project-img">
+        </div>
+        <p class="project-label">LOST AND FOUND WEB APP</p>
+      </div>
+      <div class="project-wrapper">
+        <div class="project-box">
+          <img src="MyPics/FITNESS APP.webp" alt="Fitness app screenshot" class="project-img">
+        </div>
+        <p class="project-label">FITNESS WEB APP</p>
+      </div>
+      <div class="project-wrapper">
+        <div class="project-box">
+          <img src="MyPics/FC1.jpg" alt="Graphic design logo" class="project-img1">
+        </div>
+        <p class="project-label">HAI-TARAWA FC LOGO</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Services Section -->
+  <section class="work" id="services">
+    <h2>My Services</h2>
+    <div class="services-container">
+      <div class="service-item html"><i class='bx bxl-html5'></i></div>
+      <div class="service-item css"><i class='bx bxl-css3'></i></div>
+      <div class="service-item js"><i class='bx bxl-javascript'></i></div>
+      <div class="service-item java"><i class='bx bxl-java'></i></div>
+    </div>
+  </section>
+
+  <!-- ✅ Contact Section -->
+  <section class="contacts" id="contact">
+    <h2>Let's Connect</h2>
+    <form id="contact-form" action="https://formspree.io/f/mnnvpqqv" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+    <p id="form-message"></p>
+  </section>
+
+  <!-- ✅ Footer -->
+  <section class="last">
+    <footer class="site-footer">
+      <p>All Rights Reserved &nbsp; © <span id="year"></span> - FRANCIS LORO</p>
+    </footer>
+  </section>
+
+  <!-- ✅ JavaScript -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <script src="Myportfolio.js"></script>
+
+</body>
+</html>
